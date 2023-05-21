@@ -1,20 +1,149 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-  		<title>Main</title>
-	</head>
-	<body>
-		<div class="navbar">
-			<ul>
-			  <li><a href="./index.html">Accueil</a></li>
-			  <li><a href="./Maps.html">Maps</a></li>
-			  <li><a href="./Discord.html">Discord</a></li>
-			  <li><a href="./Support.html">Support</a></li>
-			</ul>
-		</div>
-  		<div class="container">
-    		<h1 class="text">Welcome to EnderMWebsite</h1>
-  		</div>
-	</body>
-</html>
+body {
+	background-image: url('./background.jpg');
+	background-size: cover;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+  }
+  
+/* ---------------------- Main Ecriture ---------------------- */
+
+  .container {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+  }
+  
+  .text {
+	font-size: 48px;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 0.15em solid black;
+	animation: typing 4s steps(40) infinite, blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+	0% {
+	  width: 0;
+	}
+	50%, 100% {
+	  width: 35%;
+	}
+  }
+  
+  @keyframes blink-caret {
+	from, to {
+	  border-color: transparent;
+	}
+	50% {
+	  border-color: black;
+	}
+  }
+
+/* ---------------------- NavBar ---------------------- */
+
+.navbar {
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	top: 500px; /* Déplace la barre de navigation vers le bas */
+  }
+  
+  .navbar ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+  }
+  
+  .navbar li {
+	margin: 0 10px; /* Ajoute un espacement entre les boutons */
+  }
+  
+  .navbar li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	border-radius: 20px; /* Ajoute des coins arrondis aux boutons */
+  }
+  
+  .navbar li a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+  }
+
+/* ---------------------- NavBar1 ---------------------- */
+
+.navbar1 {
+	background-color: transparent;
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+  }
+  
+  .navbar1 ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+  }
+  
+  .navbar1 li {
+	margin: 0 10px; /* Ajoute un espacement entre les boutons */
+  }
+  
+  .navbar1 li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	transition: background-color 0.3s ease;
+	border-radius: 20px; /* Ajoute des coins arrondis aux boutons */
+  }
+  
+  .navbar1 li a:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+  }
+
+/* ---------------------- Maps ui ---------------------- */
+
+h1 {
+	text-align: center;
+  }
+  
+  .map-container {
+	margin: 0 auto; /* Centrer horizontalement */
+    display: flex;
+    justify-content: center;
+	margin-top: 400px
+  }
+  
+  .map {
+	background-color: rgba(255, 255, 255, 0.2); /* Couleur d'arrière-plan avec opacité */
+	border: none;
+	padding: 50px;
+	text-align: center;
+	transition: background-color 0.5s; /* Transition de couleur d'arrière-plan */
+	border-radius: 20px; /* Ajoute des coins arrondis aux boutons */
+	margin: 10px;
+    flex: 0 0 200px;
+  }
+  
+  .map:hover {
+	background-color: rgb(119, 119, 119); /* Couleur d'arrière-plan au survol */
+  }
+  
+  .map img {
+	max-width: 500%;
+	height: auto;
+	border-radius: 5px;
+  }
